@@ -1,0 +1,153 @@
+/* GANESHA BACKGROUND */
+.ganesha-bg {
+    position: fixed;
+    inset: 0;
+    background: url("https://images.unsplash.com/photo-1605100804763-247f67b3557e")
+        no-repeat center / cover;
+    z-index: -2;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255,255,255,0.75);
+    z-index: -1;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    overflow-x: hidden;
+}
+
+/* HEARTS */
+.hearts span {
+    position: fixed;
+    bottom: -20px;
+    animation: float 8s linear infinite;
+}
+
+@keyframes float {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-100vh); opacity: 0; }
+}
+
+/* DOOR */
+.door-container {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    z-index: 10;
+}
+
+.door {
+    width: 50%;
+    background: url("https://images.unsplash.com/photo-1605100804763-247f67b3557e")
+        center/cover no-repeat;
+    transition: 1.5s ease;
+}
+
+.left { transform-origin: left; }
+.right { transform-origin: right; }
+
+.open-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 14px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background: gold;
+    cursor: pointer;
+}
+
+/* CARD */
+.card {
+    max-width: 380px;
+    background: #fffaf0;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 20px;
+    border: 6px double #b8860b;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+}
+
+.hidden { display: none; }
+
+/* Ganesha Icon */
+.ganesha-icon {
+    width: 80px;
+    border-radius: 50%;
+}
+
+/* Couple */
+.couple-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid gold;
+    margin: 10px 0;
+}
+
+/* Parents */
+.parents-box {
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.groom { background: #e6f0ff; }
+.bride { background: #ffe6f2; }
+
+/* Events */
+.event {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 12px;
+}
+.mehndi { background: #d4f1c5; }
+.haldi { background: #fff2a6; }
+.wedding { background: #ffd1dc; }
+
+/* Location */
+.location {
+    background: #f0e6ff;
+    padding: 10px;
+    border-radius: 12px;
+}
+.location a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #6a0dad;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* WhatsApp */
+.whatsapp {
+    display: block;
+    margin: 15px auto;
+    background: #25D366;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.footer { margin-top: 15px; }

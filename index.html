@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Invitation</title>
+<link rel="stylesheet" href="stl.css">
+</head>
+<body>
+
+<!-- Ganesha Background -->
+<div class="ganesha-bg"></div>
+
+<!-- Floating Hearts -->
+<div class="hearts"></div>
+
+<!-- Door Screen -->
+<div class="door-container" id="door">
+    <div class="door left"></div>
+    <div class="door right"></div>
+    <button class="open-btn" onclick="openDoor()">🕉️ Open Invitation</button>
+</div>
+
+<!-- Main Card -->
+<div class="card hidden" id="card">
+
+    <h1>💐 Wedding Invitation 💐</h1>
+
+    <!-- Couple Image -->
+    <img class="couple-img" src="1.jpeg" alt="Couple">
+
+    <h2>Divyajyoti ❤️ Rohit </h2>
+
+    <!-- Parents -->
+    <div class="parents-box groom">
+        <h3>🤵 Groom</h3>
+        <p><b>Rohit Kumar</b></p>
+        <p>Son of</p>
+        <p>Mr. let Hare Ram Chaudhary</p>
+    </div>
+
+    <div class="parents-box bride">
+        <h3>👰 Bride</h3>
+        <p><b>Divyajyoti Sharma</b></p>
+        <p>Daughter of</p>
+        <p>Mr. Raju Chaudhary </p>
+    </div>
+
+    <!-- Events -->
+    <div class="event haldi">
+        <h3>Haldi 💛</h3>
+        <p>10 March 2026 | 10:00 PM</p>
+    </div>
+
+    <div class="event wedding">
+        <h3>Wedding 💝</h3>
+        <p>11 March 2026 | 7:00 PM</p>
+    </div>
+
+    <!-- Location -->
+    <div class="location">
+        <h3>📍 Venue</h3>
+        <p>siwan, Hasanpura, Bihar</p>
+        <a target=" Hasanpura"
+           href="https://www.google.com/maps/search/?api=1&query=siwan+Hasanpura">
+           📍 Open in Google Maps
+        </a>
+    </div>
+
+    <!-- Gallery -->
+    <h3>📸 Our Moments</h3>
+    <div class="gallery">
+        <img src="new.jpeg">
+        <img src="second.jpeg">
+        <img src="3.jpeg">
+  
+    </div>
+
+    <!-- WhatsApp -->
+    <h class="whatsapp"
+       target="_blank"
+       href="https://wa.me/?text=You%20are%20invited%20to%20Rohit%20and%20Priya's%20Wedding!%20Open%20this%20invite:%20https://yourwebsite.com">
+       📲 Share on WhatsApp
+    </h>
+
+    <p class="footer">With love & blessings 🙏</p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
